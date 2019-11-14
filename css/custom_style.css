@@ -1,0 +1,50 @@
+.kk{
+  display: block;
+  max-width: 230px;
+  max-height: 88px;
+  width: auto;
+  height: 70px;
+  margin-left: -120px;
+  margin-top: -50px;
+}
+
+.top-logo{
+  display: block;
+  max-width: 230px;
+  max-height: 88px;
+  width: auto;
+  height: 70px;
+  margin-top: 6px;
+}
+
+.mt30{
+  margin-top: -30px;
+}
+
+.light_bg{
+  color: #00B4FF;
+}
+
+.dark_bg{
+  color: #00435F;
+}
+
+@font-face {
+  font-family: 'HemiHead';
+  src: url("../fonts/icomoon/hemi_head_bd_iot.ttf");
+  font-style: normal;
+  font-weight: bold;
+}
+
+.logo_header { 
+  font-family: 'HemiHead';
+  font-style: italic;
+}
+
+#fh5co-footer{
+  padding: 1em 0;
+}
+
+#fh5co-navbar {
+    border: none;
+}
