@@ -32,7 +32,7 @@ $p_number = $_POST['contact'];
 $msg      = $_POST['message'];
 
 // Email content
-$emailSubject = 'Enquiry from Website' . (!empty($subject) ? ': ' . $subject : '');
+$emailSubject = 'Enquiry from Website';
 $emailBody    = "Name: $u_name\nEmail: $u_email\nPhone Number: $p_number\nMessage: $msg";
 
 $senderEmail    = 'themagicalhandwebsite@gmail.com';
