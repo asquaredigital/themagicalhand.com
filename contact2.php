@@ -29,12 +29,11 @@ $sesClient = new SesClient([
 $u_name   = $_POST['name'];
 $u_email  = $_POST['email'];
 $p_number = $_POST['contact'];
-$subject  = $_POST['subject'];
 $msg      = $_POST['message'];
 
 // Email content
 $emailSubject = 'Enquiry from Website' . (!empty($subject) ? ': ' . $subject : '');
-$emailBody    = "Name: $u_name\nEmail: $u_email\nPhone Number: $p_number\nSubject: $subject\nMessage: $msg";
+$emailBody    = "Name: $u_name\nEmail: $u_email\nPhone Number: $p_number\nMessage: $msg";
 
 $senderEmail    = 'themagicalhandwebsite@gmail.com';
 $recipientEmail = 'elavarasan5193@gmail.com';
