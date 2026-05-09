@@ -5,6 +5,7 @@ use Aws\Ses\SesClient;
 use Aws\Exception\AwsException;
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+    // Script accessed directly without form submission
     $response = array('message' => 'Invalid request.');
     echo json_encode($response);
     exit;
@@ -12,15 +13,15 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 
 $config = require '../vendor/config.php';
 
-$awsKey    = $config['aws']['key'];
+$awsKey = $config['aws']['key'];
 $awsSecret = $config['aws']['secret'];
 $awsRegion = $config['aws']['region'];
 
 $sesClient = new SesClient([
-    'version'     => 'latest',
-    'region'      => $awsRegion,
+    'version' => 'latest',
+    'region' => $awsRegion,
     'credentials' => [
-        'key'    => $awsKey,
+        'key' => $awsKey,
         'secret' => $awsSecret,
     ],
 ]);
