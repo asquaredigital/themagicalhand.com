@@ -37,7 +37,7 @@ $emailSubject = 'Enquiry from Website';
 $emailBody    = "Name: $u_name\nEmail: $u_email\nPhone Number: $p_number\nMessage: $msg";
 
 $senderEmail    = 'themagicalhandwebsite@gmail.com';
-$recipientEmail = 'elavarasan5193@gmail.com';
+$recipientEmail = 'contact@themagicalhand.com';
 
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
