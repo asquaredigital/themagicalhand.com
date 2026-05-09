@@ -29,7 +29,7 @@ $sesClient = new SesClient([
 // Get form data
 $u_name   = $_POST['name'];
 $u_email  = $_POST['email'];
-$p_number = $_POST['contact'];
+$p_number = $_POST['phone'];
 $msg      = $_POST['message'];
 
 // Email content
